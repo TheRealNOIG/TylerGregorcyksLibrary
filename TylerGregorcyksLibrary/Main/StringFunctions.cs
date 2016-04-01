@@ -6,8 +6,26 @@ namespace TylerGregorcyksLibrary.Main
     public class StringFunctions
     {
 
+        //Split Strings at every delimiter
+        public static string[] SplitString(string source, char delimiter)
+        {
+            //See if the string isnt empty
+            if (string.IsNullOrEmpty(source))
+                return null;
+
+            return source.Split(delimiter);
+        }
+        public static string[] SplitString(string source, char[] delimiter)
+        {
+            //See if the string isnt empty
+            if (string.IsNullOrEmpty(source))
+                return null;
+
+            return source.Split(delimiter);
+        }
+
         //Split Strings at specific location
-        public static string SplitString(string source, char delimiter, int index)
+        public static string SplitStringFromIndex(string source, char delimiter, int index)
         {
             //See if the string isnt empty
             if (string.IsNullOrEmpty(source))
