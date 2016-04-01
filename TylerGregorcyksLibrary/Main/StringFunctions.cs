@@ -6,10 +6,32 @@ namespace TylerGregorcyksLibrary.Main
     public class StringFunctions
     {
 
+
+        public static string[] SplitStringAlphabetically(string source, char delimiter)
+        {
+            //See if the string ist empty
+            if (string.IsNullOrEmpty(source))
+                return null;
+
+            string[] listOfStrings = source.Split(delimiter);
+            Array.Sort(listOfStrings);
+            return listOfStrings;
+        }
+        public static string[] SplitStringAlphabetically(string source, char[] delimiter)
+        {
+            //See if the string ist empty
+            if (string.IsNullOrEmpty(source))
+                return null;
+
+            string[] listOfStrings = source.Split(delimiter);
+            Array.Sort(listOfStrings);
+            return listOfStrings;
+        }
+
         //Split Strings at every delimiter
         public static string[] SplitString(string source, char delimiter)
         {
-            //See if the string isnt empty
+            //See if the string ist empty
             if (string.IsNullOrEmpty(source))
                 return null;
 
@@ -17,7 +39,7 @@ namespace TylerGregorcyksLibrary.Main
         }
         public static string[] SplitString(string source, char[] delimiter)
         {
-            //See if the string isnt empty
+            //See if the string ist empty
             if (string.IsNullOrEmpty(source))
                 return null;
 
@@ -27,7 +49,7 @@ namespace TylerGregorcyksLibrary.Main
         //Split Strings at specific location
         public static string SplitStringFromIndex(string source, char delimiter, int index)
         {
-            //See if the string isnt empty
+            //See if the string ist empty
             if (string.IsNullOrEmpty(source))
                 return null;
 
