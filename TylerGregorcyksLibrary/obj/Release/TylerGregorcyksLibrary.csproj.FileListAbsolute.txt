@@ -1,0 +1,4 @@
+C:\Users\Tyler Gregorcyk\AppData\Local\Temporary Projects\TylerGregorcyksLibrary\bin\Release\TylerGregorcyksLibrary.dll
+C:\Users\Tyler Gregorcyk\AppData\Local\Temporary Projects\TylerGregorcyksLibrary\bin\Release\TylerGregorcyksLibrary.pdb
+C:\Users\Tyler Gregorcyk\AppData\Local\Temporary Projects\TylerGregorcyksLibrary\obj\Release\TylerGregorcyksLibrary.dll
+C:\Users\Tyler Gregorcyk\AppData\Local\Temporary Projects\TylerGregorcyksLibrary\obj\Release\TylerGregorcyksLibrary.pdb
