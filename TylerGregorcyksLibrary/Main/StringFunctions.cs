@@ -6,7 +6,7 @@ namespace TylerGregorcyksLibrary.Main
     public class StringFunctions
     {
 
-
+        //Split string alphabetically
         public static string[] SplitStringAlphabetically(string source, char delimiter)
         {
             //See if the string ist empty
@@ -85,5 +85,18 @@ namespace TylerGregorcyksLibrary.Main
             return finalString.ToString();
         }
 
+        //Get the first part of the string before the first Delimiter
+        public static string SplitStringBeforeFirstDelimiter(string source, char delimiter)
+        {
+            if (string.IsNullOrEmpty(source))
+                return null;
+
+            int location = source.IndexOf(delimiter);
+            if (location > -1)
+            {
+                return source.Substring(0, location);
+            }
+            return null;
+        }
     }
 }

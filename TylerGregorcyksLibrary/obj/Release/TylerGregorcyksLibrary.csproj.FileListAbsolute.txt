@@ -6,3 +6,4 @@ C:\Users\Tyler Gregorcyk\documents\visual studio 2010\Projects\TylerGregorcyksLi
 C:\Users\Tyler Gregorcyk\documents\visual studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\bin\Release\TylerGregorcyksLibrary.pdb
 C:\Users\Tyler Gregorcyk\documents\visual studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\obj\Release\TylerGregorcyksLibrary.dll
 C:\Users\Tyler Gregorcyk\documents\visual studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\obj\Release\TylerGregorcyksLibrary.pdb
+C:\Users\Tyler Gregorcyk\Documents\Visual Studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\obj\Release\TylerGregorcyksLibrary.csprojResolveAssemblyReference.cache
