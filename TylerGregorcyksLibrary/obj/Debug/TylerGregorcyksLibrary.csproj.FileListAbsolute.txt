@@ -1,0 +1,5 @@
+C:\Users\Tyler Gregorcyk\Documents\Visual Studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\obj\Debug\TylerGregorcyksLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Gregorcyk\Documents\Visual Studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\bin\Debug\TylerGregorcyksLibrary.dll
+C:\Users\Tyler Gregorcyk\Documents\Visual Studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\bin\Debug\TylerGregorcyksLibrary.pdb
+C:\Users\Tyler Gregorcyk\Documents\Visual Studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\obj\Debug\TylerGregorcyksLibrary.dll
+C:\Users\Tyler Gregorcyk\Documents\Visual Studio 2010\Projects\TylerGregorcyksLibrary\TylerGregorcyksLibrary\obj\Debug\TylerGregorcyksLibrary.pdb

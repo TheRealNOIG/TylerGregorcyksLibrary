@@ -20,6 +20,7 @@ namespace TylerGregorcyksLibrary.Main
                 }
                 catch (SocketException e)
                 {
+                    Console.WriteLine(e.Message);
                 }
             }
         }
