@@ -8,20 +8,26 @@ namespace TylerGregorcyksLibrary.Main
     public class SimpleClient
     {
         private Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        public int attemptsToConnectToServer = 0;
+        public bool failedToConnectToServer = false;
 
         public void startClient(string ip, int port)
         {
             while (!clientSocket.Connected)
             {
-                try
+                if (attemptsToConnectToServer <= 3)
                 {
-                    IPAddress ipAd = IPAddress.Parse(ip);
-                    clientSocket.Connect(ipAd, port);
+                    try
+                    {
+                        IPAddress ipAd = IPAddress.Parse(ip);
+                        clientSocket.Connect(ipAd, port);
+                    }
+                    catch (SocketException e)
+                    {
+                        attemptsToConnectToServer++;
+                    }
                 }
-                catch (SocketException e)
-                {
-                    Console.WriteLine(e.Message);
-                }
+                else { failedToConnectToServer = true; }
             }
         }
 

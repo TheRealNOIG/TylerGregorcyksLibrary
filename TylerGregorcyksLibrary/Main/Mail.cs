@@ -6,7 +6,7 @@ namespace TylerGregorcyksLibrary.Main
 {
     public class Mail
     {
-
+        public static string error = string.Empty;
 
         public static void SendMail(string toAddress, string fromAddress, string userName, string password, string subject, string message)
         {
@@ -29,7 +29,7 @@ namespace TylerGregorcyksLibrary.Main
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                error = ex.Message.ToString();
             }
         }
 
