@@ -6,6 +6,8 @@ namespace TylerGregorcyksLibrary.Main
     public class StringFunctions
     {
 
+        public static string error = string.Empty;
+
         //Split string alphabetically
         public static string[] SplitStringAlphabetically(string source, char delimiter)
         {
@@ -85,7 +87,7 @@ namespace TylerGregorcyksLibrary.Main
                     }
                 }
             }
-            catch (Exception e) { Console.WriteLine(e.Message)};
+            catch (Exception e) { error = e.Message.ToString(); }
             return finalString.ToString();
         }
 

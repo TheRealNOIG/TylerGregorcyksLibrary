@@ -7,15 +7,35 @@ namespace TylerGregorcyksLibrary.Main
 {
     public class SimpleClient
     {
-        private Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        public int attemptsToConnectToServer = 0;
+        private Socket clientSocket;
+        public int attemptsToConnectToServer = 1;
         public bool failedToConnectToServer = false;
+        private bool clientConnected = false;
+        public bool connected
+        {
+            get
+            {
+                if(clientSocket != null)
+                    return clientSocket.Connected;
+                return false;
+            }
+            set
+            {
+                if (value == false)
+                {
+                    clientSocket.Disconnect(false);
+                    this.clientConnected = false;
+                }
+            }
+        }
 
         public void startClient(string ip, int port)
         {
+            clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            attemptsToConnectToServer = 1;
             while (!clientSocket.Connected)
             {
-                if (attemptsToConnectToServer <= 3)
+                if (attemptsToConnectToServer <= 1)
                 {
                     try
                     {
@@ -27,8 +47,9 @@ namespace TylerGregorcyksLibrary.Main
                         attemptsToConnectToServer++;
                     }
                 }
-                else { failedToConnectToServer = true; }
+                else { failedToConnectToServer = true; break; }
             }
+            this.clientConnected = true;
         }
 
         public void sendMessage(string text)
